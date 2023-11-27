@@ -1,0 +1,653 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Owner.CreateNewPostActivity">
+
+
+    <include layout="@layout/toolbarmain" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:fontFamily="@font/fontbold"
+                    android:gravity="left"
+                    android:text="Property Availability"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/Available"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/btn_background_no"
+                        android:fontFamily="@font/font"
+                        android:text="Available For Rent"
+                        android:textAllCaps="false"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                    <View
+                        android:layout_width="10dp"
+                        android:layout_height="match_parent" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/Rented"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/btn_background_no"
+                        android:fontFamily="@font/font"
+
+                        android:text="Rented"
+                        android:textAllCaps="false"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gre" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:fontFamily="@font/fontbold"
+                    android:gravity="left"
+                    android:text="Tenant  Type"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingHorizontal="10dp">
+
+                    <RadioGroup
+                        android:id="@+id/tenanttype"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/rent"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="10dp"
+                            android:background="@drawable/btn_background_textgre"
+                            android:fontFamily="@font/font"
+                            android:paddingLeft="5dp"
+                            android:paddingEnd="7dp"
+                            android:text="Rent"
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
+
+                        <RadioButton
+                            android:id="@+id/pg"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="10dp"
+                            android:background="@drawable/btn_background_textgre"
+                            android:fontFamily="@font/font"
+                            android:paddingLeft="5dp"
+                            android:paddingEnd="7dp"
+                            android:text="PG"
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
+                    </RadioGroup>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gre" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:fontFamily="@font/fontbold"
+                    android:gravity="left"
+                    android:text="Type Off Property"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingHorizontal="10dp">
+
+                    <RadioGroup
+                        android:id="@+id/properttype"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+
+                        <RadioButton
+                            android:id="@+id/Residential"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:layout_marginHorizontal="3dp"
+                            android:layout_marginVertical="3dp"
+                            android:background="@drawable/btn_background_textgre"
+                            android:fontFamily="@font/font"
+                            android:gravity="center"
+                            android:paddingVertical="3dp"
+                            android:paddingLeft="5dp"
+                            android:paddingEnd="7dp"
+                            android:text="Residential Apartment"
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
+
+                        <RadioButton
+                            android:id="@+id/Independent"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:layout_marginHorizontal="3dp"
+                            android:layout_marginVertical="3dp"
+                            android:background="@drawable/btn_background_textgre"
+
+                            android:fontFamily="@font/font"
+                            android:gravity="center"
+                            android:paddingVertical="3dp"
+                            android:paddingLeft="5dp"
+                            android:paddingEnd="7dp"
+                            android:text="Independent House/Villa"
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
+
+                        <RadioButton
+                            android:id="@+id/Room"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:layout_marginHorizontal="3dp"
+                            android:layout_marginVertical="3dp"
+                            android:background="@drawable/btn_background_textgre"
+
+                            android:fontFamily="@font/font"
+                            android:gravity="center"
+                            android:paddingVertical="3dp"
+                            android:paddingLeft="5dp"
+                            android:paddingEnd="7dp"
+                            android:text="Room"
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
+
+                        <RadioButton
+                            android:id="@+id/SharingRoom"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:layout_marginHorizontal="3dp"
+                            android:layout_marginVertical="3dp"
+                            android:background="@drawable/btn_background_textgre"
+
+                            android:fontFamily="@font/font"
+                            android:gravity="center"
+                            android:paddingVertical="3dp"
+                            android:paddingLeft="5dp"
+                            android:paddingEnd="7dp"
+                            android:text="Sharing room"
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
+
+                        <RadioButton
+                            android:id="@+id/Basement"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:layout_marginHorizontal="3dp"
+                            android:layout_marginVertical="3dp"
+                            android:background="@drawable/btn_background_textgre"
+                            android:fontFamily="@font/font"
+                            android:gravity="center"
+                            android:paddingVertical="3dp"
+                            android:paddingLeft="5dp"
+                            android:paddingEnd="7dp"
+                            android:text="Basement"
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
+
+                    </RadioGroup>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gre" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:fontFamily="@font/fontbold"
+                    android:gravity="left"
+                    android:text="Number Of Room"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingHorizontal="10dp">
+
+                    <RadioGroup
+                        android:id="@+id/nuberoffroom"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/bhk1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center"
+                            android:layout_marginHorizontal="3dp"
+                            android:layout_marginVertical="3dp"
+                            android:background="@drawable/btn_background_textgre"
+
+                            android:fontFamily="@font/font"
+                            android:gravity="center"
+                            android:paddingVertical="3dp"
+                            android:paddingLeft="5dp"
+                            android:paddingEnd="7dp"
+                            android:text="1 BHK"
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
+
+                        <RadioButton
+                            android:id="@+id/bhk2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center"
+                            android:layout_marginHorizontal="3dp"
+                            android:layout_marginVertical="3dp"
+                            android:background="@drawable/btn_background_textgre"
+                            android:fontFamily="@font/font"
+                            android:gravity="center"
+                            android:paddingVertical="3dp"
+                            android:paddingEnd="7dp"
+                            android:text="2 BHK"
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
+
+                        <RadioButton
+                            android:id="@+id/bhk3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center"
+                            android:layout_marginHorizontal="3dp"
+                            android:layout_marginVertical="3dp"
+                            android:background="@drawable/btn_background_textgre"
+
+                            android:fontFamily="@font/font"
+                            android:gravity="center"
+                            android:paddingVertical="3dp"
+
+                            android:paddingEnd="7dp"
+                            android:text="3 BHK"
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
+
+                        <RadioButton
+                            android:id="@+id/bhk4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:layout_marginHorizontal="3dp"
+                            android:layout_marginVertical="3dp"
+                            android:background="@drawable/btn_background_textgre"
+                            android:fontFamily="@font/font"
+                            android:gravity="center"
+                            android:paddingVertical="3dp"
+                            android:paddingLeft="5dp"
+                            android:paddingEnd="7dp"
+                            android:text="4 BHK"
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
+                    </RadioGroup>
+
+
+                </HorizontalScrollView>
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gre" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:fontFamily="@font/fontbold"
+                    android:gravity="left"
+                    android:text="Property Images"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingHorizontal="10dp">
+
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/propertyimagelist"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="7" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/selectPhoto"
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="3"
+                        android:adjustViewBounds="true"
+                        android:background="@drawable/btn_background_primary"
+                        android:elevation="0dp"
+                        android:paddingHorizontal="10dp"
+                        android:text="Select Photo"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:textSize="12sp" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gre" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:fontFamily="@font/fontbold"
+                    android:gravity="left"
+                    android:text="Property Rent"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingHorizontal="10dp">
+
+
+                    <EditText
+                        android:id="@+id/startBudget"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="7"
+                        android:background="@drawable/bg_editbox"
+                        android:fontFamily="@font/font"
+                        android:inputType="number"
+                        android:paddingHorizontal="10dp"
+                        android:paddingVertical="8dp"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginHorizontal="15dp"
+                        android:layout_weight="3"
+                        android:fontFamily="@font/font"
+                        android:gravity="center"
+                        android:text=" $ / Per Month"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gre" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:fontFamily="@font/fontbold"
+                    android:gravity="left"
+                    android:text="Enter Property Address "
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingHorizontal="10dp">
+
+
+                    <TextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/font"
+                        android:text="Address"
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:id="@+id/Address"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="2dp"
+                        android:background="@drawable/bg_editbox"
+                        android:fontFamily="@font/font"
+                        android:hint="150 Bankside dr"
+                        android:inputType="textPersonName"
+                        android:paddingHorizontal="10dp"
+                        android:paddingVertical="6dp"
+                        android:textColorHint="@color/gre"
+                        android:textSize="14sp" />
+
+                    <TextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/font"
+                        android:text="City"
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:id="@+id/City"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="2dp"
+                        android:background="@drawable/bg_editbox"
+                        android:fontFamily="@font/font"
+                        android:hint="Kitchener"
+                        android:inputType="textPersonName"
+                        android:paddingHorizontal="10dp"
+                        android:paddingVertical="8dp"
+                        android:textColorHint="@color/gre"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/font"
+                        android:text="Province"
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:id="@+id/Province"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="2dp"
+                        android:background="@drawable/bg_editbox"
+                        android:fontFamily="@font/font"
+                        android:hint="Ontario"
+                        android:inputType="textPersonName"
+                        android:paddingHorizontal="10dp"
+                        android:paddingVertical="8dp"
+                        android:textColorHint="@color/gre"
+                        android:textSize="14sp" />
+
+                    <TextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/font"
+                        android:text="Pincode"
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:id="@+id/Pincode"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="2dp"
+                        android:background="@drawable/bg_editbox"
+                        android:fontFamily="@font/font"
+                        android:hint="N2N 3E4"
+                        android:inputType="textPersonName"
+                        android:paddingHorizontal="10dp"
+                        android:paddingVertical="8dp"
+                        android:textColorHint="@color/gre"
+                        android:textSize="14sp" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gre" />
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/addProperty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginVertical="20dp"
+        android:adjustViewBounds="true"
+        android:background="@drawable/btn_background_primary"
+        android:elevation="0dp"
+        android:paddingHorizontal="30dp"
+        android:text="Add Property"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+</LinearLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/id_home"
+        android:icon="@drawable/ic_home"
+        android:title="Home" />
+    <item
+        android:id="@+id/id_Chat"
+        android:icon="@drawable/ic_shortlist"
+        android:title="Chats" />
+    <item
+        android:id="@+id/id_explore"
+        android:icon="@drawable/ic_explore"
+        android:title="Explore" />
+    <item
+        android:visible="false"
+        android:id="@+id/id_shortlist"
+        android:icon="@drawable/ic_shortlist"
+        android:title="Shortlisted" />
+    <item
+        android:id="@+id/id_profile"
+        android:icon="@drawable/ic_user"
+        android:title="Profile" />
+</menu>

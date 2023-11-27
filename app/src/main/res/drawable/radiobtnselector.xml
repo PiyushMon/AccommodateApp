@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Unchecked state -->
+    <item android:state_checked="false">
+        <layer-list>
+            <item android:drawable="@android:drawable/btn_radio" />
+            <!-- Add any background color you want for unchecked state -->
+            <item android:drawable="@color/unchecked_background_color" />
+        </layer-list>
+    </item>
+    <!-- Checked state -->
+    <item android:state_checked="true">
+        <layer-list>
+            <item android:drawable="@android:drawable/btn_radio" />
+            <!-- Add any background color you want for checked state -->
+            <item android:drawable="@color/checked_background_color" />
+        </layer-list>
+    </item>
+</selector>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimaryDark">#1F7DC9</color>
+    <color name="colorAccent">#226e6e</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="bgcolor">#ffffff</color>
+    <color name="colorPrimary">#1F7DC9</color>
+    <color name="iconcolor">#1F7DC9</color>
+    <color name="iconcolorsecond">#B9000000</color>
+    <color name="gre">#EDEDED</color>
+    <color name="gre2">#777676</color>
+    <color name="unchecked_background_color">#FF0000
+    </color> <!-- Replace with your desired color -->
+    <color name="checked_background_color">#00FF00</color>
+    <color name="green">#4C834F</color>
+    <color name="red">#D30E00</color>
+    <color name="c2dcf1">#C2DCF1</color>
+</resources>

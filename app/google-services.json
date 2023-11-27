@@ -1,0 +1,72 @@
+{
+  "project_info": {
+    "project_number": "260350725850",
+    "firebase_url": "https://accommodate-app-default-rtdb.firebaseio.com",
+    "project_id": "accommodate-app",
+    "storage_bucket": "accommodate-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:260350725850:android:c6d7d834a832d222f55fe3",
+        "android_client_info": {
+          "package_name": "accommodate.rentapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "260350725850-1q42hlbmk6n2qcjhhurvu42tlkiq19et.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "accommodate.rentapp",
+            "certificate_hash": "cc4a9191f0334e9dbeb0ac62d611c2fe4276902f"
+          }
+        },
+        {
+          "client_id": "260350725850-ct52qjkq35nfue620b3n9069sg6qs9hk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "accommodate.rentapp",
+            "certificate_hash": "8f564ce90e5e15c9dd5ef594af1cfc8eac26f458"
+          }
+        },
+        {
+          "client_id": "260350725850-eg42givqm1084d4q8a4o2mctkaqmb0o0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "accommodate.rentapp",
+            "certificate_hash": "0f0ddf7c0df7f21b2479669b5aa74c05efd5002a"
+          }
+        },
+        {
+          "client_id": "260350725850-r60vv506u2lakogaqen4fotb0p8q0iub.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "accommodate.rentapp",
+            "certificate_hash": "6c0980f6a8201c6b4d3f490502bba8c5dd7e23b3"
+          }
+        },
+        {
+          "client_id": "260350725850-l6vadj1onbqlfu78c8okqjj3fjvmg44g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCBTQ7K6w5Ly3i2m2CtU7EU93SE1ZjK3Ww"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "260350725850-l6vadj1onbqlfu78c8okqjj3fjvmg44g.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
